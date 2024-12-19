@@ -42,10 +42,12 @@ nav {
     background-image: linear-gradient(rgba(236, 246, 254, 0.7), rgba(68, 10, 143, 0.143));
 }
 
+
 .profile-img {
+    display: flex;
     height: auto;
-    max-height:400px;
-    margin: -80px 0 -4px 0;
+    max-width: 100%;
+    margin : -80px 0 0 0;
 }
 .image-grid {
     display: grid;
@@ -96,12 +98,12 @@ nav {
 form {
     max-width: 60%;
     margin: 0 auto;
-
 }
 
 .name-row {
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     width: 100%;
 }
 
@@ -157,8 +159,47 @@ footer {
     border-radius: 22px;
     font-family: 'Space Mono', monospace;
     font-weight:700;
-    /* margin: 4rem 2rem 2rem 2rem; */
     font-size: 14px;
     padding: 12px 24px 12px 24px;
 }
-
+@media only screen and (max-width:825px){
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-brand{
+        margin-bottom: 1rem;
+    }
+    .main-section h1 {
+        font-size: 3rem;
+        line-height: normal;
+    }
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    .profile-img{
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width:490px){
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .nav-links {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section h1 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+    .profile-img{
+        padding-top: 40px;
+    }
+}
