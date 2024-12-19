@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #ECF6FE;
+}
+
+.nav-brand {
+    font-size: 3rem;
+    font-weight:bolder;
+    color: #381664;
+    font-family: 'Syne', sans-serif;
+    gap: 12px;
+}
+
+.nav-links a{
+    color: #381664;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.4rem;
+}
+
+.main-section {
+    text-align: center;
+    color:#381664;
+    background-color: #ECF6FE;
+    border-top: 1px solid #440A8F;
+    border-bottom: 1px solid #440A8F;
+    font-size: 40px;
+    font-family: 'Syne', sans-serif;
+    padding: 0rem;
+    background-image: linear-gradient(rgba(236, 246, 254, 0.7), rgba(68, 10, 143, 0.143));
+}
+
+.profile-img {
+    height: auto;
+    max-height:400px;
+    margin: -80px 0 -4px 0;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ECF6FE;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+#para1{
+    margin: 0;
+    color: #381664;
+    font-size: 20px;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+#para2{
+    margin: 0;
+    color: #381664;
+    font-size: 17px;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.contact-section {
+    padding: 2rem;
+    background-color: #ECF6FE;
+    border-bottom: 0.5px solid #381664;
+    gap: 16px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color:#381664;
+    font-size: 25px;
+    font-family: 'Syne', sans-serif;
+}
+.contact-section p{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #381664;
+    font-size: 13px;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+form {
+    max-width: 60%;
+    margin: 0 auto;
+
+}
+
+.name-row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #440A8F;
+    border-radius: 30px;
+}
+input::placeholder{
+    color: #381664;
+}
+textarea::placeholder{
+    color: #381664;
+}
+textarea {
+    height: 120px;
+}
+
+button {
+    background-color:#440A8F;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+footer {
+    background-color: #ECF6FE;
+    color: #381664;
+    padding: 4rem 2rem 0rem 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECF6FE;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+.contact-btn{
+    color: #381664;
+    background-color: #ECF6FE;
+    border: 1px solid #440A8F;
+    border-radius: 22px;
+    font-family: 'Space Mono', monospace;
+    font-weight:700;
+    /* margin: 4rem 2rem 2rem 2rem; */
+    font-size: 14px;
+    padding: 12px 24px 12px 24px;
+}
+
